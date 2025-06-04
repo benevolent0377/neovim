@@ -1,9 +1,9 @@
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>ee", vim.cmd.Ex, {desc = "netrw"})
 vim.keymap.set("n", "<leader>bd", vim.cmd.bdelete, {desc = "bdelete"})
-vim.keymap.set("n", "<leader>;;", vim.cmd.terminal, {desc = "open a new terminal"})
+vim.keymap.set("n", "<leader>;", vim.cmd.terminal, {desc = "open a new terminal"})
 vim.keymap.set("n", "<leader>U", vim.cmd.PackerSync, {desc = "packer sync run"})
-vim.keymap.set("n", "<leader>cl", vim.cmd.close, {desc = "close a window"})
+vim.keymap.set("n", "<leader>wc", vim.cmd.close, {desc = "close a window"})
 vim.keymap.set("n", "<leader>r", vim.cmd.RunCode, {desc = "run code"})
 vim.keymap.set('n', '<leader>?', vim.cmd.Cheatsheet, {desc = "show vim cheetsheet"})
 vim.keymap.set('n', '<leader>t', vim.cmd.NvimTreeOpen, {desc = "open nvim tree"})

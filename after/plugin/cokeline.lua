@@ -43,3 +43,7 @@ require('cokeline').setup({
     },
   },
 })
+
+-- Keybinds
+vim.keymap.set('n', '<leader>bp', '<Plug>(cokeline-focus-prev)', { desc = "go to the previous buffer"})
+vim.keymap.set('n', '<leader>bn', '<Plug>(cokeline-focus-next)', { desc = "go to the next buffer"})
