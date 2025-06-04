@@ -106,4 +106,15 @@ return require('packer').startup(function(use)
     use ("m4xshen/hardtime.nvim")
 
     use ('echasnovski/mini.icons')
+    
+    use({
+  "xiyaowong/nvim-transparent",
+  config = function()
+    require("transparent").setup {
+      enable = true,
+    }
+  end
+})
+-- Autocmd for nvim-tree
+vim.cmd("autocmd Colorscheme * highlight NvimTreeNormal guibg=none guifg=#9da5b3")
 end)
