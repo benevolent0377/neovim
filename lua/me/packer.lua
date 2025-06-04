@@ -104,4 +104,6 @@ return require('packer').startup(function(use)
     use ('folke/which-key.nvim')
 
     use ("m4xshen/hardtime.nvim")
+
+    use ('echasnovski/mini.icons')
 end)

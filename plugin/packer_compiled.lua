@@ -160,6 +160,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\Sterling\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\mason.nvim",
     url = "https://github.com/mason-org/mason.nvim"
   },
+  ["mini.icons"] = {
+    loaded = true,
+    path = "C:\\Users\\Sterling\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\mini.icons",
+    url = "https://github.com/echasnovski/mini.icons"
+  },
   ["noice.nvim"] = {
     loaded = true,
     path = "C:\\Users\\Sterling\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\noice.nvim",
