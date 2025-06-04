@@ -79,11 +79,21 @@ _G.packer_plugins = {
     path = "C:\\Users\\Sterling\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["block.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\Sterling\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\block.nvim",
+    url = "https://github.com/HampusHauffman/block.nvim"
+  },
   catppuccin = {
     config = { "\27LJ\2\n:\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\27colorscheme catppuccin\bcmd\bvim\0" },
     loaded = true,
     path = "C:\\Users\\Sterling\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\catppuccin",
     url = "https://github.com/catppuccin/nvim"
+  },
+  ["cheatsheet.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\Sterling\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cheatsheet.nvim",
+    url = "https://github.com/doctorfree/cheatsheet.nvim"
   },
   ["cmp-buffer"] = {
     loaded = true,
@@ -105,15 +115,30 @@ _G.packer_plugins = {
     path = "C:\\Users\\Sterling\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-path",
     url = "https://github.com/hrsh7th/cmp-path"
   },
+  ["code_runner.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\Sterling\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\code_runner.nvim",
+    url = "https://github.com/CRAG666/code_runner.nvim"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "C:\\Users\\Sterling\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
+  ["hardtime.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\Sterling\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\hardtime.nvim",
+    url = "https://github.com/m4xshen/hardtime.nvim"
+  },
   harpoon = {
     loaded = true,
     path = "C:\\Users\\Sterling\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\harpoon",
     url = "https://github.com/theprimeagen/harpoon"
+  },
+  ["lazydev.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\Sterling\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lazydev.nvim",
+    url = "https://github.com/folke/lazydev.nvim"
   },
   ["lsp-zero.nvim"] = {
     loaded = true,
@@ -125,20 +150,70 @@ _G.packer_plugins = {
     path = "C:\\Users\\Sterling\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\mason-lspconfig.nvim",
     url = "https://github.com/mason-org/mason-lspconfig.nvim"
   },
+  ["mason-nvim-dap.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\Sterling\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\mason-nvim-dap.nvim",
+    url = "https://github.com/jay-babu/mason-nvim-dap.nvim"
+  },
   ["mason.nvim"] = {
     loaded = true,
     path = "C:\\Users\\Sterling\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\mason.nvim",
     url = "https://github.com/mason-org/mason.nvim"
+  },
+  ["noice.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\Sterling\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\noice.nvim",
+    url = "https://github.com/folke/noice.nvim"
+  },
+  ["nui.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\Sterling\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nui.nvim",
+    url = "https://github.com/MunifTanjim/nui.nvim"
   },
   ["nvim-cmp"] = {
     loaded = true,
     path = "C:\\Users\\Sterling\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
+  ["nvim-cokeline"] = {
+    loaded = true,
+    path = "C:\\Users\\Sterling\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-cokeline",
+    url = "https://github.com/willothy/nvim-cokeline"
+  },
+  ["nvim-dap"] = {
+    loaded = true,
+    path = "C:\\Users\\Sterling\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-dap",
+    url = "https://github.com/mfussenegger/nvim-dap"
+  },
+  ["nvim-dap-ui"] = {
+    loaded = true,
+    path = "C:\\Users\\Sterling\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-dap-ui",
+    url = "https://github.com/rcarriga/nvim-dap-ui"
+  },
+  ["nvim-dap-virtual-text"] = {
+    loaded = true,
+    path = "C:\\Users\\Sterling\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-dap-virtual-text",
+    url = "https://github.com/theHamsta/nvim-dap-virtual-text"
+  },
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "C:\\Users\\Sterling\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
+  },
+  ["nvim-nio"] = {
+    loaded = true,
+    path = "C:\\Users\\Sterling\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-nio",
+    url = "https://github.com/nvim-neotest/nvim-nio"
+  },
+  ["nvim-notify"] = {
+    loaded = true,
+    path = "C:\\Users\\Sterling\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-notify",
+    url = "https://github.com/rcarriga/nvim-notify"
+  },
+  ["nvim-tree.lua"] = {
+    loaded = true,
+    path = "C:\\Users\\Sterling\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-tree.lua",
+    url = "https://github.com/nvim-tree/nvim-tree.lua"
   },
   ["nvim-treesitter"] = {
     loaded = true,
@@ -160,6 +235,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\Sterling\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  ["popup.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\Sterling\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\popup.nvim",
+    url = "https://github.com/nvim-lua/popup.nvim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "C:\\Users\\Sterling\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope.nvim",
@@ -174,6 +254,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\Sterling\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
+  },
+  ["which-key.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\Sterling\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\which-key.nvim",
+    url = "https://github.com/folke/which-key.nvim"
   }
 }
 

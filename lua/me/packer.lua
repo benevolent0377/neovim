@@ -1,8 +1,7 @@
 -- This file can be loaded by calling `lua require('plugins')` from your init.vim
 
--- Only required if you have packer configured as `opt`
 vim.cmd [[packadd packer.nvim]]
-
+-- Only required if you have packer configured as `opt`
 return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
@@ -56,4 +55,53 @@ return require('packer').startup(function(use)
   use ('hrsh7th/cmp-path')
   use ('hrsh7th/cmp-cmdline')
 
+  use ('CRAG666/code_runner.nvim')
+
+  use {
+
+      'folke/noice.nvim',
+      requires = {
+
+        "MunifTanjim/nui.nvim",
+        "rcarriga/nvim-notify"
+      },
+  }
+
+  use ('willothy/nvim-cokeline')
+
+  use ('nvim-tree/nvim-tree.lua')
+
+  use {
+      'doctorfree/cheatsheet.nvim',
+
+      requires = {
+          {'nvim-telescope/telescope.nvim'},
+          {'nvim-lua/popup.nvim'},
+          {'nvim-lua/plenary.nvim'},
+      }
+  }
+
+  use ('HampusHauffman/block.nvim')
+
+  use {
+    'mfussenegger/nvim-dap',
+    requires = {
+        {'rcarriga/nvim-dap-ui'},
+        {'jay-babu/mason-nvim-dap.nvim'},
+        {'theHamsta/nvim-dap-virtual-text'},
+    },
+}
+
+    use {
+        "rcarriga/nvim-dap-ui",
+        requires =
+	{"mfussenegger/nvim-dap"},
+        {"nvim-neotest/nvim-nio"},
+    }
+
+    use ('folke/lazydev.nvim')
+
+    use ('folke/which-key.nvim')
+
+    use ("m4xshen/hardtime.nvim")
 end)
