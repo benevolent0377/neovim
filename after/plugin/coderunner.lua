@@ -13,14 +13,14 @@ require('code_runner').setup({
       "$dir/$fileNameWithoutExt"
     },
     c = function(...)
-      c_base = {
+      local c_base = {
         "cd $dir &&",
-        "gcc $fileName -o -Wall",
-        "/tmp/$fileNameWithoutExt",
+        "gcc $fileName -Wall -o",
+        "$fileNameWithoutExt",
       }
       local c_exec = {
-        "&& /tmp/$fileNameWithoutExt &&",
-        "rm /tmp/$fileNameWithoutExt",
+        "&& $fileNameWithoutExt &&",
+        "del $fileNameWithoutExt.exe"
       }
       vim.ui.input({ prompt = "Add more args:" }, function(input)
         c_base[4] = input

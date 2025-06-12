@@ -11,14 +11,42 @@ return require('packer').startup(function(use)
 	  -- or                            , branch = '0.1.x',
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
+  use ({
+      "sphamba/smear-cursor.nvim",
 
-  use({
-	"catppuccin/nvim", 
-	as = 'catppuccin',
-	config = function()
-		vim.cmd('colorscheme catppuccin')
+      opts = {
+          -- Smear cursor when switching buffers or windows.
+          smear_between_buffers = true,
 
-  end})
+          -- Smear cursor when moving within line or to neighbor lines.
+          -- Use `min_horizontal_distance_smear` and `min_vertical_distance_smear` for finer control
+          smear_between_neighbor_lines = true,
+
+          -- Draw the smear in buffer space instead of screen space when scrolling
+          scroll_buffer_space = true,
+
+          -- Set to `true` if your font supports legacy computing symbols (block unicode symbols).
+          -- Smears will blend better on all backgrounds.
+          legacy_computing_symbols_support = false,
+
+          -- Smear cursor in insert mode.
+          -- See also `vertical_bar_cursor_insert_mode` and `distance_stop_animating_vertical_bar`.
+          smear_insert_mode = true,
+          cursor_color = "#ff8800",
+          stiffness = 0.3,
+          trailing_stiffness = 0.1,
+          trailing_exponent = 5,
+          never_draw_over_target = true,
+          hide_target_hack = true,
+          gamma = 1,
+      }})
+      use({
+          "catppuccin/nvim", 
+          as = 'catppuccin',
+          config = function()
+              vim.cmd('colorscheme catppuccin')
+
+          end})
 
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 
@@ -105,6 +133,15 @@ return require('packer').startup(function(use)
 
     use ("m4xshen/hardtime.nvim")
 
+    use('ThePrimeagen/vim-be-good')
+
+    use({
+        'nvzone/typr',
+        requires =
+        {'nvzone/volt'},
+        cmd = {'Typr', 'TyprStats'},
+    })
+
     use ('echasnovski/mini.icons')
     
     use({
@@ -115,6 +152,7 @@ return require('packer').startup(function(use)
     }
   end
 })
+
 -- Autocmd for nvim-tree
 vim.cmd("autocmd Colorscheme * highlight NvimTreeNormal guibg=none guifg=#9da5b3")
 end)
